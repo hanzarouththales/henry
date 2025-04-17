@@ -27,13 +27,13 @@ jobs:
       uses: LanceMcCarthy/akeyless-action@v4
       with:
         access-id: p-uvxbf8zpbpxwom     # (ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
-        static-secrets: '{"/henry/gittest":"my_first_secret"}'
+        static-secrets: '{"/henry":"gittest"}'
         
     - name: Use Outputs
       run: |
         echo "Step Outputs"
-        echo "my_first_secret: ${{ steps.fetch-secrets.outputs.my_first_secret }}"
+        echo "gittest: ${{ steps.fetch-secrets.outputs.gittest }}"
                 
         echo "Environment Variables"
-        echo "my_first_secret: ${{ env.my_first_secret }}"
+        echo "gittest: ${{ env.gittest }}"
        
