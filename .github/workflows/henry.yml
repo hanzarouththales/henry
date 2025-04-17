@@ -27,7 +27,7 @@ jobs:
       uses: LanceMcCarthy/akeyless-action@v4
       with:
         access-id: p-uvxbf8zpbpxwom     # (ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
-        static-secrets: '{"/henry/gitsecret4":"my_first_secret"}'
+        static-secrets: '{"/henry/gitsecret5":"my_first_secret"}'
         
     - name: Use Outputs
       run: |
