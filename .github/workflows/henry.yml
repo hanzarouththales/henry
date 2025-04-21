@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Fetch secrets from AKeyless
       id: fetch-secrets
-      uses: LanceMcCarthy/akeyless-action@v4
+      uses: akeyless-community/akeyless-github-action@v1.0.1
       with:
         ca-certificate: ${{ secrets.NODE_EXTRA_CA_CERTS }}
         api-url:   ${{ secrets.MY_CM_GATEWAY }}  # https://dke.hanzarouth.ca/akeyless-api/v2   
