@@ -26,7 +26,7 @@ jobs:
       id: fetch-secrets
       uses: LanceMcCarthy/akeyless-action@v4
       with:
-        access-id: p-yc80t8z5oxzj    # (github client: 'p-uvxbf8zpbpxwom', gateway-admin 'p-yc80t8z5oxzj', ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
+        access-id: p-uvxbf8zpbpxwom    # (github client: 'p-uvxbf8zpbpxwom', gateway-admin 'p-yc80t8z5oxzj', ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
         static-secrets: '{"/henry/gitsecret1":"my_first_secret"}'
         
     - name: Use Outputs
