@@ -26,8 +26,8 @@ jobs:
       id: fetch-secrets
       uses: akeyless-community/akeyless-github-action@v1.0.1
       with:
-        ca-certificate: ${{ secrets.NODE_EXTRA_CA_CERTS }}
-        api-url:   ${{ secrets.MY_CM_GATEWAY }}  # https://dke.hanzarouth.ca/akeyless-api/v2   
+        ca-certificate: ./zerosslcacert.pem # ${{ secrets.NODE_EXTRA_CA_CERTS }}
+        api-url:   https://dke.hanzarouth.ca/akeyless-api/v2  # ${{ secrets.MY_CM_GATEWAY }}   
         access-id: p-uvxbf8zpbpxwom    # (github client: 'p-uvxbf8zpbpxwom', gateway-admin 'p-yc80t8z5oxzj', ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
         static-secrets: |
             - name: "/henry/gitsecret2"
