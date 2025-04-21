@@ -1,7 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
-export NODE_EXTRA_CA_CERTS=./zerosslcacert.pem
 
 # Controls when the workflow will run
 on:
@@ -28,6 +27,7 @@ jobs:
       uses: LanceMcCarthy/akeyless-action@v4
       with:
         api-url:   https://dke.hanzarouth.ca/akeyless-api/v2   # ${{ vars.MY_CM_GATEWAY }}
+        ca-certificate: ${{ secrets.NODE_EXTRA_CA_CERTS }}
         access-id: p-uvxbf8zpbpxwom    # (github client: 'p-uvxbf8zpbpxwom', gateway-admin 'p-yc80t8z5oxzj', ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
         static-secrets: '{"/henry/gitsecret2":"my_first_secret"}'
         
