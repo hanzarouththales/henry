@@ -17,9 +17,9 @@ on:
 jobs:
   fetch_secrets:
     runs-on: ubuntu-latest
-    # permissions:  # IMPORTANT - both of these are required
-      # id-token: write
-      # contents: read
+    permissions:  # IMPORTANT - both of these are required
+      id-token: write
+      contents: read
     name: Fetch some static secrets
     steps:
     - name: Fetch secrets from AKeyless
