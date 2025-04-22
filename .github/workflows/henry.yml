@@ -31,7 +31,7 @@ jobs:
         access-type: jwt
         # ca-certificate: ca_bundle.crt #${{ vars.NODE_EXTRA_CA_CERTS }} # hanzarouththales/henry/zerosslcacert.pem
         static-secrets: |
-          - name: "/henry/gitsecret1"
+          - name: "/henry/gitsecret2"
             output-name: "my_first_secret"
           # static-secrets: '{"/henry/gitsecret2":"my_first_secret"}'
         
