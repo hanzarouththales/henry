@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   fetch_secrets:
-    runs-on: NUC2 #ubuntu-latest
+    runs-on: self-hosted #ubuntu-latest
     permissions:  # IMPORTANT - both of these are required
       id-token: write
       contents: read
