@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Fetch secrets from AKeyless
       id: fetch-secrets
-      uses: akeyless-community/akeyless-github-action@v1.0.1
+      uses: akeyless-community/akeyless-github-action@v1.1.2
       with:
         # api-url: ${{ secrets.MY_CM_GATEWAY }} # https://dke.hanzarouth.ca:443/akeyless-api/v2 or https://api.akeyless.io 
         access-id: p-uvxbf8zpbpxwom    # (github client: 'p-uvxbf8zpbpxwom', gateway-admin 'p-yc80t8z5oxzj', ex: 'p-iwt13fd19ajd') We recommend storing this as a GitHub Actions secret
