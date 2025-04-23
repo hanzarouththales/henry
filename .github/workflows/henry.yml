@@ -38,17 +38,17 @@ jobs:
     - name: Use Outputs
       run: |
         echo "Step Outputs"
-        echo "my_first_secret from step outputs: ${{ steps.fetch-secrets.outputs.my_first_secret }}" >> output.txt
+        echo "my_first_secret from step outputs: ${{ steps.fetch-secrets.outputs.my_first_secret }}" >> newoutput.txt
         echo "my gateway: ${{ vars.MY_CM_GATEWAY }}"
         echo "my CA cert: ${{ vars.NODE_EXTRA_CA_CERTS }}"
                 
         echo "Environment Variables"
-        echo "my_first_secret from vars: ${{ vars.my_first_secret }}" >> output.txt
+        echo "my_first_secret from vars: ${{ vars.my_first_secret }}" >> newoutput.txt
         echo "my gateway: ${{ vars.MY_CM_GATEWAY }}"
         echo "my CA cert: ${{ vars.NODE_EXTRA_CA_CERTS }}"
         echo " "
-        echo "output.txt file:"
-        cat output.txt
+        echo "newoutput.txt file:"
+        cat newoutput.txt
         echo " "
-        echo "secrets.txt file:"
-        cat secrets.txt
+        # echo "secrets.txt file:"
+        # cat secrets.txt
