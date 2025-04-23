@@ -47,7 +47,7 @@ jobs:
         echo "my gateway: ${{ vars.MY_CM_GATEWAY }}"
         echo "my CA cert: ${{ vars.NODE_EXTRA_CA_CERTS }}"
         echo " "
-        echo output.txt file:"
+        echo "output.txt file:"
         cat output.txt
         echo " "
         echo "secrets.txt file:"
